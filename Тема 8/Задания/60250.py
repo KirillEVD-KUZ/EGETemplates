@@ -11,4 +11,4 @@ for n1 in nchet:
                     if (line.count("0") <= 1 and line.count("2") <= 1 and line.count("3") <= 1 and line.count("4") <= 1 and line.count("5") <= 1 and line.count("6") <= 1 and line.count("7") <= 1) :
                         count +=1
 print(count)
-#108 + 72 =180
+# 108 + 72 = 180

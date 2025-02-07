@@ -1,4 +1,2 @@
-b= int(input())
-res=bin(b)[2:]
-res1=res.zfill(8)
-print(res1)
+a=int(input(),2)
+print(a)

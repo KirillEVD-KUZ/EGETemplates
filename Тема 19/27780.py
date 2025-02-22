@@ -23,5 +23,6 @@ def game2(heap1, heap2, moves, to):
 
 
 print("19 - ", min(s for s in range(1, 74) if not game(12, s, 0, 1) and game(12, s, 0, 2)))
+print("20-",[s for s in range(1,101) if not game2(5,s,0,1 ) and   game2(5,s,0,3)])
 print("20 - ", [s for s in range(1, 74) if not game2(12, s, 0, 1) and game2(12, s, 0, 3)])
 print("21 - ", [s for s in range (1,74) if game2(12,s,0,2) or game2(12,s,0,4)])

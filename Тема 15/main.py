@@ -13,8 +13,9 @@
 for a in range(1, 128):
     f = True
     for x in range(1, 128):
-        if not (x & 77 == 0 or x & 12 != 0 or x & a != 0):
+        if not ((x & 77 != 0) <= ((x & 12 == 0) <= (x & a != 0))):
             f = False
             break
     if f:
         print(a)
+        break

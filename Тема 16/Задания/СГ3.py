@@ -1,4 +1,4 @@
-nums = [0] * 500000000
+nums = [0] * 50000
 
 for n in range(len(nums)):
     if n == 0:

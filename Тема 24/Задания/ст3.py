@@ -1,15 +1,13 @@
 text=open("ст3.txt").readline()
-
-while 'AA' in text:
-    text = text.replace('AA', 'A')
-text=text.replace("B","*").replace("C","*").replace("D","*").replace('--', '-*-').replace('++', '+*+').replace('+-', '+*-').replace('-+', '-*+')
+while "AA" in text:
+    text=text.replace("AA","A")
+text=text.replace("B","*").replace("C","*").replace("D","*")
 parts=text.split("*")
-target_parts = []
+target_part=[]
 for part in parts:
-    if len(part) > 0 and part[0]=="A":
-        parts_2 = part.split("A")
-        for p in parts_2:
-            if len(p) > 2 and p[0] != '+':
-                target_parts.append(p)
-print(max(target_parts, key=len))
-print(eval(max(target_parts, key=len)))
+    if len(part)>0 and part[0]=="AA":
+        part_2=part.split("A")
+        for p in part_2:
+            if len(p)>0:
+                target_part.append(p)
+print(max(target_part,key=len))
